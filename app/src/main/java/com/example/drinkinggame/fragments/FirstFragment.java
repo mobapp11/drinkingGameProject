@@ -1,4 +1,4 @@
-package com.example.drinkinggame;
+package com.example.drinkinggame.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+
+import com.example.drinkinggame.R;
 
 import java.util.Random;
 

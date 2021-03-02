@@ -7,31 +7,41 @@
 
     <fragment
         android:id="@+id/StartFragment"
-        android:name="com.example.drinkinggame.StartFragment"
+        android:name="com.example.drinkinggame.fragments.StartFragment"
         android:label="@string/start_fragment_label"
         tools:layout="@layout/fragment_start">
 
         <action
-            android:id="@+id/action_StartFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_StartFragment_to_PlayerFragment"
+            app:destination="@id/PlayerFragment" />
     </fragment>
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.drinkinggame.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/PlayerFragment"
+        android:name="com.example.drinkinggame.fragments.PlayerFragment"
+        android:label="@string/player_fragment_label"
+        tools:layout="@layout/fragment_players">
+
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            android:id="@+id/action_PlayerFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.drinkinggame.SecondFragment"
+        android:name="com.example.drinkinggame.fragments.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.drinkinggame.fragments.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
     </fragment>
 </navigation>

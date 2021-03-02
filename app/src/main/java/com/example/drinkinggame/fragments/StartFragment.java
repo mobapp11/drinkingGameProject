@@ -1,4 +1,4 @@
-package com.example.drinkinggame;
+package com.example.drinkinggame.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import com.example.drinkinggame.R;
+
 public class StartFragment extends Fragment {
 
     Button button_playGame;
@@ -18,7 +20,7 @@ public class StartFragment extends Fragment {
     private View.OnClickListener buttonListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Navigation.findNavController(v).navigate(R.id.action_StartFragment_to_SecondFragment);
+            Navigation.findNavController(v).navigate(R.id.action_StartFragment_to_PlayerFragment);
         }
     };
 

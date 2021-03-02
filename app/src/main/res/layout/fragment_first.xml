@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_launcher_foreground"
     android:padding="20dp"
-    tools:context=".FirstFragment">
+    tools:context=".fragments.FirstFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
